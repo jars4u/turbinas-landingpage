@@ -19,7 +19,7 @@ export default function Pricing() {
                 <Typography variant="h6" sx={{ fontWeight: 600 }}>{p.t}</Typography>
                 <Typography variant="h4" sx={{ fontWeight: 700, mt: 1 }}>{p.p}</Typography>
                 <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>{p.d}</Typography>
-                <Button variant="contained" sx={{ mt: 2 }}>Consultar</Button>
+                <Button variant="contained" sx={{ mt: 2 }} component="a" href="https://wa.me/584246383996" target="_blank" rel="noopener noreferrer">Consultar</Button>
               </Paper>
             </Grid>
           ))}

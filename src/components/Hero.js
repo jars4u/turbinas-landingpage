@@ -19,7 +19,7 @@ export default function Hero({ onReserveClick }) {
               Turbinas Maracaibo: expertos en convertidores de caja hidráulica y mantenimiento de transmisiones automáticas.
             </Typography>
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mt: 3 }}>
-              <Button variant="contained" color="primary" size="large" onClick={onReserveClick}>Consultar Servicio</Button>
+              <Button variant="contained" color="primary" size="large" component="a" href="https://wa.me/584246383996" target="_blank" rel="noopener noreferrer">Consultar Servicio</Button>
               <Button variant="outlined" color="secondary" size="large" href="#galeria">Ver trabajos</Button>
             </Stack>
             <Stack direction="row" spacing={1} sx={{ mt: 3 }}>

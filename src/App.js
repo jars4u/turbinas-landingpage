@@ -66,7 +66,7 @@ export default function App() {
                 </Tooltip>
               </Stack>
               <Typography variant="body2" color="text.secondary">+58 424 638 3996 · @turbinasmaracaibo</Typography>
-              <Button variant="contained" color="primary" onClick={scrollToCTA}>Consultar</Button>
+              <Button variant="contained" color="primary" component="a" href="https://wa.me/584246383996" target="_blank" rel="noopener noreferrer">Consultar</Button>
             </Stack>
           </Container>
         </Toolbar>
