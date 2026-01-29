@@ -65,7 +65,7 @@ export default function App() {
                   </IconButton>
                 </Tooltip> */}
               </Stack>
-              <Typography variant="body2" color="text.secondary">+58 424 638 3996</Typography>
+              <Typography variant="body2" color="text.secondary" sx={{ display: { xs: 'none', md: 'block' } }}>+58 424 638 3996</Typography>
               <Button 
                 variant="contained" 
                 color="primary" 

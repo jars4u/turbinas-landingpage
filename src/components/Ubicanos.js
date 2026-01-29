@@ -14,32 +14,33 @@ export default function Ubicanos() {
 
   return (
     <Box sx={{ py: 6, bgcolor: 'background.paper' }} id="ubicacion">
-      <Container maxWidth="lg">
-        <Typography variant="h4" sx={{ fontWeight: 700, mb: 3 }}>
+      <Container maxWidth="lg" sx={{ textAlign: { xs: 'left', md: 'left' }, px: { xs: 2, md: 0 } }}>
+        <Typography variant="h4" sx={{ fontWeight: 700, mb: 2, textAlign: { xs: 'left', md: 'left' } }}>
           Ubícanos
         </Typography>
-        <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+        <Typography variant="body2" color="text.secondary" sx={{ mb: 2, textAlign: { xs: 'left', md: 'left' } }}>
           Aquí está la ubicación de nuestro taller. Pulsa "Cómo llegar" para abrir las instrucciones de ruta en Google Maps (tu dispositivo propondrá la mejor ruta).
         </Typography>
 
-        <Box sx={{ overflow: 'hidden', boxShadow: 3 }}>
+        <Box sx={{ overflow: 'hidden', boxShadow: 3, borderRadius: 2 }}>
           <Box
             component="iframe"
             title="Mapa - Turbinas Maracaibo"
             src={embedSrc}
-            sx={{ width: '100%', height: { xs: 300, md: 480 }, border: 0 }}
+            sx={{ width: '100%', height: { xs: 240, md: 480 }, border: 0 }}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
         </Box>
 
-        <Box sx={{ mt: 2 }}>
+        <Box sx={{ mt: 2, display: 'flex', justifyContent: { xs: 'center', md: 'flex-start' } }}>
           <Button
             component="a"
             href={directionsSrc}
             target="_blank"
             rel="noopener noreferrer"
             variant="outlined"
+            sx={{ width: { xs: '100%', md: 'auto' }, maxWidth: { xs: 420 } }}
           >
             Cómo llegar
           </Button>
