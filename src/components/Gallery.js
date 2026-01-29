@@ -79,9 +79,6 @@ function Gallery() {
               <Typography variant="body1" color="text.secondary">
                 En Turbinas Maracaibo nos especializamos en el diagnóstico, reparación y mantenimiento de convertidores de caja hidráulica y transmisiones automáticas. Utilizamos tecnología avanzada y personal altamente capacitado para garantizar resultados óptimos y la satisfacción de nuestros clientes.
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Mira uno de nuestros procesos en detalle:
-              </Typography>
             </Stack>
           </Grid>
         </Grid>

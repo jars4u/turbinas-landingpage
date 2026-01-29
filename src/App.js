@@ -7,6 +7,7 @@ import Stats from './components/Stats';
 import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
 import CTA from './components/CTA';
+import Ubicanos from './components/Ubicanos';
 import Footer from './components/Footer';
 import { AppBar, Box, Button, Container, Toolbar, Stack, IconButton, Tooltip, Typography } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -83,6 +84,7 @@ export default function App() {
       </AppBar>
       <Box sx={{ mt: 8 }}>
         <Hero onReserveClick={scrollToCTA} />
+        <Ubicanos />
         <Services />
         <Process />
         <Gallery />

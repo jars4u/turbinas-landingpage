@@ -35,7 +35,7 @@ export default function Services() {
     return () => observer.disconnect();
   }, []);
   return (
-    <Box sx={{ pb: { xs: 6, md: 8 } }}>
+    <Box sx={{ py: { xs: 6, md: 8 } }}>
       <Container maxWidth="lg">
         <Typography variant="h4" sx={{ fontWeight: 700, mb: 3 }}>Servicios</Typography>
 

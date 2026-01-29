@@ -26,7 +26,7 @@ export default function Hero({ onReserveClick }) {
               <Chip label="Atención personalizada" color="secondary" variant="outlined" />
             </Stack>
           </Box>
-          <Box sx={{ flex: 1, display: 'grid', placeItems: 'center', height: '100%' }}>
+          <Box sx={{ flex: 1, display: { xs: 'none', md: 'grid' }, placeItems: 'center', height: '100%' }}>
             <Box
               component="img"
               src="/media/Diagram_Hero.png"
