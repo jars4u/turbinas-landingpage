@@ -21,8 +21,7 @@ export default function App() {
     <Box>
       <AppBar position="fixed" color="transparent" sx={{ backdropFilter: 'blur(6px)', bgcolor: 'rgba(15,23,42,0.6)' }}>
         <Toolbar>
-          <Container maxWidth="lg" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <img src="/media/logo.png" alt="Logo" style={{ height: 36 }} />
+          <Container maxWidth="lg" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <Stack direction="row" spacing={2} alignItems="center">
               <Stack direction="row" spacing={1} alignItems="center">
                 <Tooltip title="Facebook">
@@ -51,7 +50,7 @@ export default function App() {
                     <InstagramIcon />
                   </IconButton>
                 </Tooltip>
-                <Tooltip title="WhatsApp">
+                {/* <Tooltip title="WhatsApp">
                   <IconButton
                     aria-label="WhatsApp"
                     component="a"
@@ -63,10 +62,21 @@ export default function App() {
                   >
                     <WhatsAppIcon />
                   </IconButton>
-                </Tooltip>
+                </Tooltip> */}
               </Stack>
-              <Typography variant="body2" color="text.secondary">+58 424 638 3996 · @turbinasmaracaibo</Typography>
-              <Button variant="contained" color="primary" component="a" href="https://wa.me/584246383996" target="_blank" rel="noopener noreferrer">Consultar</Button>
+              <Typography variant="body2" color="text.secondary">+58 424 638 3996</Typography>
+              <Button 
+                variant="contained" 
+                color="primary" 
+                component="a" 
+                href="https://wa.me/584246383996" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                size="small"
+                startIcon={<WhatsAppIcon />}
+              >
+                Consultar
+              </Button>
             </Stack>
           </Container>
         </Toolbar>
@@ -77,9 +87,9 @@ export default function App() {
         <Process />
         <Gallery />
         <Stats />
-        <Testimonials />
+        {/* <Testimonials />
         <Pricing />
-        <div ref={ctaRef}><CTA /></div>
+        <div ref={ctaRef}><CTA /></div> */}
         <Footer />
       </Box>
     </Box>

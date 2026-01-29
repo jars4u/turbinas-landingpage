@@ -8,15 +8,14 @@ export default function Hero({ onReserveClick }) {
       <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
         <Stack direction={{ xs: 'column', md: 'row' }} spacing={4} alignItems={{ xs: 'center', md: 'flex-start' }}>
           <Box sx={{ flex: 1 }}>
-            <Stack direction="row" spacing={1} sx={{ mb: 2 }}>
-              {[...Array(5)].map((_, i) => (<span key={i}>⭐</span>))}
-              <Typography variant="caption" sx={{ ml: 1 }}>Clientes satisfechos</Typography>
-            </Stack>
+            <Box sx={{ mb: 2 }}>
+              <img src="/media/logo.png" alt="Logo Turbinas Maracaibo" style={{ height: 62 }} />
+            </Box>
             <Typography variant="h2" sx={{ fontWeight: 700, lineHeight: 1.1, fontSize: { xs: '2.2rem', md: '3.6rem' } }}>
-              Un nuevo nivel de cuidado para tu transmisión
+              Un nuevo nivel de cuidado para tus convertidores
             </Typography>
             <Typography variant="h6" sx={{ mt: 2, color: 'text.secondary', fontWeight: 400 }}>
-              Turbinas Maracaibo: expertos en convertidores de caja hidráulica y mantenimiento de transmisiones automáticas.
+              Turbinas Maracaibo: expertos en reparación, reconstrucción y mantenimiento de convertidores de cajas hidráulicas.
             </Typography>
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mt: 3 }}>
               <Button variant="contained" color="primary" size="large" component="a" href="https://wa.me/584246383996" target="_blank" rel="noopener noreferrer">Consultar Servicio</Button>
@@ -36,9 +35,9 @@ export default function Hero({ onReserveClick }) {
               decoding="async"
               sx={{
                 height: { xs: 'auto', md: '100%' },
-                width: { xs: '100%', md: 'auto' },
-                maxWidth: '100%',
-                maxHeight: '100%',
+                width: { xs: '100%', md: '100%' },
+                maxWidth: 680,
+                maxHeight: 680,
                 objectFit: 'contain',
                 transform: 'rotate(-18deg)',
                 transformOrigin: 'center',
